@@ -18,24 +18,27 @@ class CardGame:
 
 
   def check_for_ace(self, card):
-    if card.value = 1:
+    if card.value = 1:         ## should be  if card.value == 1:
       return True
-    else
+    else                      ## should be   else:
       return False
    
 
-  dif highest_card(self, card1 card2):
-  if card1.value > card2.value:
-    return card
+  dif highest_card(self, card1 card2):   ## should be  def highest_card(self, card1, card2)
+  if card1.value > card2.value:     ## if needs to be intented.
+    return card         ## should be card1
   else:
     return card2
   
 
 
 def cards_total(self, cards):
-  total
+  total                         ## needs to be total =0
   for card in cards:
     total += card.value
-    return "You have a total of" + total
+    return "You have a total of" + total      ## needs to be out dented
+
+    ## concatenating a string and int will fail, needs to be
+    ##  return f"You have a total of {total}" 
   
 ```
